@@ -49,3 +49,38 @@ function removeTransition(e) {
   if (e.propertyName !== 'transform') return;
   this.classList.remove('playing');
 }
+
+let startButton = document.getElementById("start-beat");
+startButton.addEventListener("click", beatBox);
+
+function beatBox() {
+  function simulateKey(keyCode) {
+      
+      let event = new KeyboardEvent("keydown", {
+          bubbles: true,
+          cancelable: true,
+          keyCode: keyCode
+      });
+      
+      document.dispatchEvent(event);
+  }
+
+  function playBump(keyCode, time) {
+      return new Promise((resolve) => {
+          setTimeout(() => {
+              simulateKey(keyCode);
+              resolve();
+          }, time);
+      });
+  }
+
+
+  playBump(65, 500) 
+      .then(() => playBump(83, 500)) 
+      .then(() => playBump(68, 500)) 
+      .then(() => playBump(90, 500)) 
+      .then(() => playBump(69, 500)) 
+      .then(() => playBump(81, 500)) 
+      .then(() => playBump(87, 500)) 
+      .then(() => playBump(88, 500)); 
+}
