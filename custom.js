@@ -75,12 +75,40 @@ function beatBox() {
   }
 
 
-  playBump(65, 500) 
-      .then(() => playBump(83, 500)) 
-      .then(() => playBump(68, 500)) 
-      .then(() => playBump(90, 500)) 
-      .then(() => playBump(69, 500)) 
-      .then(() => playBump(81, 500)) 
-      .then(() => playBump(87, 500)) 
-      .then(() => playBump(88, 500)); 
+  playBump(87, 500) // simulate key W press (snare) after 500ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(70, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(74, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(76, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(77, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(78, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(80, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(85, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(87, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(82, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(88, 250)) // simulate key X press (tom) after 250ms
+    .then(() => playBump(84, 500)) // simulate key W press (snare) after 500ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+    .then(() => playBump(69, 250)) // simulate key E press (Kick) after 250ms
+
+ 
 }
